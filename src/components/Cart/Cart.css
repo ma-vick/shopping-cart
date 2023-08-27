@@ -1,4 +1,7 @@
 .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     right: 0;
@@ -6,5 +9,28 @@
     max-width: 330px;
     height: 100vh;
     background-color: white;
-    padding: 100px 20px 20px;
+    padding: 100px 10px 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.18);
+    transform: translate(110%, 0);
+    transition: all 400ms ease;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-resume {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 35px 0 15px;
+    border-top: 1px solid #ddd;
+}
+
+.cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart--active {
+    transform: translate(0, 0);
 }
