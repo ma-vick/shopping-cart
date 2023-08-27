@@ -23,8 +23,6 @@
 .cart-resume {
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 35px 0 15px;
-    border-top: 1px solid #ddd;
 }
 
 .cart-items .cart-item:last-child {
@@ -33,4 +31,27 @@
 
 .cart--active {
     transform: translate(0, 0);
+}
+
+.cart-resume-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding: 26px 16px;
+}
+
+.btn-remove-all {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.btn-remove-all:hover {
+    color: red;
 }
